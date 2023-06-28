@@ -1,0 +1,67 @@
+.home-image-1 {
+    min-height: 93vh;
+
+    &::before {
+        background-image: url('/exterior.jpg');
+        @include fixed-background-image;
+        @include image-filter;
+    }
+}
+
+.home-image-2 {
+    min-height: 100vh;
+
+    &::before {
+        background-image: url('/buffet.jpg');
+        @include fixed-background-image;
+        @include image-filter;
+    }
+}
+
+.home-image-3 {
+    min-height: 100vh;
+
+    &::before {
+        background-image: url('/decor.jpg');
+        @include fixed-background-image;
+        @include image-filter;
+    }
+}
+
+.menu-preview-images-wrapper {
+    @include responsive-grid;
+
+    .menu-preview-image {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+}
+
+.review-stars {
+    color: $pale-gold;
+    font-size: 1.5rem;
+}
+
+.reviews-wrapper {
+    @include responsive-grid;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        color: $purple-accent;
+        quotes: '"' '"' "'" "'";
+
+        &::before {
+            content: open-quote;
+        }
+
+        &::after {
+            content: close-quote;
+        }
+    }
+}

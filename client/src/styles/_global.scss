@@ -1,0 +1,93 @@
+body, html, main {
+    height: 100%;
+    margin: 0;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.image-wrapper {
+    @include align-center;
+    padding: 2rem;
+    position: relative;
+
+    .image-wrapper-heading.heading-link {
+        border: 1px solid white;
+        padding: 1rem;
+        transition-property: color background-color;
+        transition-duration: 0.3s;
+        background-color: #000000a1;
+        letter-spacing: 5px;
+
+        &:hover {
+            color: black;
+            background-color: white;
+            text-shadow: none;
+
+            >a {
+                color: black;
+            }
+        }
+    }
+
+    .image-wrapper-heading {
+        font-size: 2rem;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 6px 6px 8px black;
+        padding: 2rem;
+        text-align: center;
+        letter-spacing: 5px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.text-wrapper {
+    background-color: white;
+    padding: 1rem;
+    max-width: 1024px;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    @include align-center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .text-group-icon {
+        height: 10rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: $purple-accent;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Alice";
+        text-decoration-thickness: 1px;
+        text-decoration-line: underline;
+        text-underline-offset: 8px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration-thickness: 1px;
+        text-decoration-line: underline;
+        text-underline-offset: 6px;
+        color: $purple-accent;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
