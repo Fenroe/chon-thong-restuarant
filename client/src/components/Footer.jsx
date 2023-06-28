@@ -12,7 +12,7 @@ export const Footer = () => {
             onMouseEnter={() => setMouseNearIcons(true)}
             onMouseLeave={() => setMouseNearIcons(false)}
             className={`footer-social-media-icons ${mouseNearIcons ? "mouse-entered" : ""}`}>
-                <a href="" className="social-media-icon">
+                <a href="mailto:thairavintolachonthong@gmail.com" className="social-media-icon">
                     <AiOutlineMail />
                 </a>
                 <a href="" className="social-media-icon">

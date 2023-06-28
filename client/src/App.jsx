@@ -4,16 +4,16 @@ import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-d
 
 const App = () => {
     return (
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/info" element={<Info />} />
-        </Switch>
-        <Footer />
-      </Router>
+        <Router>
+            <Header />
+            <Switch>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/menu" element={<Menu />} />
+                <Route path="/info" element={<Info />} />
+            </Switch>
+            <Footer />
+        </Router>
     )
 }
 
