@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer"
 import { useState, useEffect } from "react"
 
-export const TextSection = ({ children, id }) => {
+export const useIntersectionObserver = () => {
     const { ref, inView } = useInView({ threshold: 0.2 })
 
     const [visible, setVisible] = useState(false)
@@ -12,14 +12,7 @@ export const TextSection = ({ children, id }) => {
         }
     }, [inView])
 
-    return (
-        <section
-        className={`text-wrapper ${visible ? "visible" : "hidden"}`}
-        id={id || ""}
-        ref={ref}>
-            <div className="text-inner-wrapper">
-                {children}
-            </div>
-        </section>
-    )
+    return {
+        ref, visible
+    }
 }

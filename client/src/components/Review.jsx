@@ -16,7 +16,7 @@ export const Review = ({ rating, text }) => {
                     <AiFillStar key={`${text}${star}${rating}`}/>
                 )}
             </div>
-            <p>{text}</p>
+            <span>{text}</span>
         </article>
     )
 }

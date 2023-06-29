@@ -38,34 +38,6 @@
     }
 }
 
-.review-stars {
-    color: $pale-gold;
-    font-size: 1.5rem;
-}
-
-.reviews-wrapper {
-    @include responsive-grid;
-}
-
-.review {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-        color: $purple-accent;
-        quotes: '"' '"' "'" "'";
-
-        &::before {
-            content: open-quote;
-        }
-
-        &::after {
-            content: close-quote;
-        }
-    }
-}
-
 .info-wrapper {
     display: flex;
     flex-direction: column;
