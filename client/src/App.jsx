@@ -8,9 +8,7 @@ const App = () => {
             <Header />
             <Switch>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
                 <Route path="/menu" element={<Menu />} />
-                <Route path="/contact" element={<Contact />} />
             </Switch>
         </Router>
     )

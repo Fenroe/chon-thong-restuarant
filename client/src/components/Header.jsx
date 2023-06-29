@@ -1,12 +1,17 @@
+import { useHashScroll } from "../hooks"
+import { Link } from "react-router-dom"
+
 export const Header = () => {
+    useHashScroll()
+
     return (
         <header>
             <nav>
-                <a className="nav-a" href="/#order">Order</a>
-                <a className="nav-a" href="/#about">About</a>
-                <a className="nav-a" href="/menu">Menu</a>
-                <a className="nav-a" href="/#reviews">Reviews</a>
-                <a className="nav-a" href="/#contact">Contact</a>
+                <Link to="/#order">Order</Link>
+                <Link to="/#about">About</Link>
+                <Link to="/menu">Menu</Link>
+                <Link to="/#reviews">Reviews</Link>
+                <Link to="/#contact">Contact</Link>
             </nav>
         </header>
     )
