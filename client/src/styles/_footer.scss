@@ -1,7 +1,7 @@
 footer {
     @include align-center;
     background-color: #000000;
-    min-height: 5rem;
+    min-height: 7vh;
 
     .footer-social-media-icons {
         display: flex;
@@ -15,7 +15,7 @@ footer {
             border-radius: 50%;
             text-decoration: none;
             background-color: $silver;
-            transition-property: background-color;
+            transition-property: all;
             transition-duration: 0.3s;
             @include align-center;
         }

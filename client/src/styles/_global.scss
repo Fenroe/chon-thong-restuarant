@@ -13,7 +13,7 @@ body, html, main {
     .image-wrapper-heading.heading-link {
         border: 1px solid white;
         padding: 1rem;
-        transition-property: color background-color;
+        transition-property: all;
         transition-duration: 0.3s;
         background-color: #000000a1;
         letter-spacing: 5px;
@@ -44,50 +44,126 @@ body, html, main {
             font-size: 2.5rem;
         }
     }
+
+    .social-media-icons {
+        display: flex;
+        gap: 1rem;
+        position: absolute;
+        bottom: 1rem;
+
+        .social-media-icon {
+            font-size: 1.5rem;
+            color: black;
+            padding: .5rem;
+            border: 1px solid $silver;
+            border-radius: 50%;
+            text-decoration: none;
+            background-color: $silver;
+            transition-property: all;
+            transition-duration: 0.3s;
+            @include align-center;
+        }
+    }
+
+    .social-media-icons.mouse-entered {
+        .social-media-icon {
+            border: 1px solid #666666;
+            background-color: #666666;
+
+            &:hover {
+                border: 1px solid $silver;
+                background-color: $silver;
+            }
+        }
+    }
 }
 
 .text-wrapper {
     background-color: white;
-    padding: 1rem;
-    max-width: 1024px;
     width: 100%;
-    padding: 1rem;
-    margin: 0 auto;
-    @include align-center;
-    flex-direction: column;
-    gap: 2rem;
 
-    .text-group-icon {
-        height: 10rem;
+
+    .text-inner-wrapper {
+        margin: 0 auto;
+        @include align-center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+        max-width: 1024px;
+        background-color: inherit;
+
+        .text-group-icon {
+            height: 10rem;
+        }
+    
+        h1 {
+            font-size: 3rem;
+            color: $purple-accent;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: "Alice", serif;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 8px;
+            line-height: 1.2;
+        }
+    
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .links-wrapper {
+            align-items: center;
+            width: 100%;
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            a {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $purple-accent;
+                text-align: center;
+                line-height: 1.5;
+                padding: 1rem;
+                border: 1px solid $purple-accent;
+                transition-property: all;
+                transition-duration: 0.2s;
+                font-family: "Alice", serif;
+                width: 100%;
+                max-width: 500px;
+    
+                &:hover {
+                    background-color: $purple-accent;
+                    color: white;
+                    border-color: white;
+                    transform: scale(1.1);
+                }
+            }
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+            }
+        }
     }
+}
 
-    h1 {
-        font-size: 3rem;
-        color: $purple-accent;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-family: "Alice";
-        text-decoration-thickness: 1px;
-        text-decoration-line: underline;
-        text-underline-offset: 8px;
-        line-height: 1.2;
-    }
+.text-wrapper.dark {
+    background-color: #333333;
 
-    p {
-        font-size: 1.5rem;
-        text-align: center;
-        line-height: 1.5;
-    }
+    .text-inner-wrapper {
+        h1 {
+            color: $pale-gold;
+        }
 
-    a {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        text-decoration-thickness: 1px;
-        text-decoration-line: underline;
-        text-underline-offset: 6px;
-        color: $purple-accent;
-        text-align: center;
-        line-height: 1.5;
+        p {
+            color: #5d5d5d;
+        }
+
+        a {
+            color: $pale-gold;
+        }
     }
 }

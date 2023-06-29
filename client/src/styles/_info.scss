@@ -1,0 +1,9 @@
+.info-image-1 {
+    min-height: 93vh;
+
+    &::before {
+        background-image: url('/decor-2.jpg');
+        @include fixed-background-image;
+        @include image-filter;
+    }
+}

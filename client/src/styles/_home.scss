@@ -1,5 +1,5 @@
 .home-image-1 {
-    min-height: 93vh;
+    min-height: 100vh;
 
     &::before {
         background-image: url('/exterior.jpg');
@@ -19,11 +19,11 @@
 }
 
 .home-image-3 {
-    min-height: 100vh;
+    min-height: 800px;
 
     &::before {
         background-image: url('/decor.jpg');
-        @include fixed-background-image;
+        @include background-image;
         @include image-filter;
     }
 }
@@ -63,5 +63,97 @@
         &::after {
             content: close-quote;
         }
+    }
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+    .info-row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        width: inherit;
+        gap: 2rem;
+
+        .info-row-image {
+            flex: 1;
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+        }
+
+        .info-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: "Alice", serif;
+
+            h2 {
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: $purple-accent;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            span {
+                font-size: 1.3rem;
+                line-height: 1.5;
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 1rem;
+
+    .icon {
+        font-size: 1.5rem;
+        border: 1px solid $purple-accent;
+        text-decoration: none;
+        color: $purple-accent;
+        padding: 0.75rem !important;
+        @include align-center;
+        border-radius: 50%;
+        transition-property: all;
+        transition-duration: 0.2s;
+        width: auto !important;
+
+        &:hover {
+            background-color: $purple-accent;
+            color: white;
+            border-color: white;
+            transform: scale(1.2) !important;
+        }
+    }
+}
+
+.iframe-wrapper {
+    width: 100%;
+    iframe {
+        width: 100%;
+        min-height: 300px;
     }
 }
