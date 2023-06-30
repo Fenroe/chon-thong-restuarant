@@ -9,6 +9,6 @@ export const TextSectionParagraph = ({ text, disableIntersection }) => {
     return (
         <p
         ref={ref}
-        className={`${visible ? "visible" : "hidden"}`}>{text}</p>
+        className={`text-section-p ${visible ? "visible" : "hidden"}`}>{text}</p>
     )
 }

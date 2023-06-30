@@ -1,0 +1,38 @@
+.text-section-links {
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition-delay: 0.5s;
+    transition-property: opacity;
+    transition-duration: 0.7s;
+    @include fade-in-image;
+
+    a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $purple-accent;
+        text-align: center;
+        line-height: 1.5;
+        padding: 1rem;
+        border: 1px solid $purple-accent;
+        transition-property: all;
+        transition-duration: 0.2s;
+        font-family: "Alice", serif;
+        width: 100%;
+        max-width: 500px;
+
+        &:hover {
+            background-color: $purple-accent;
+            color: white;
+            border-color: white;
+            scale: 1.1;
+        }
+    }
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
+}

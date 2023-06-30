@@ -9,6 +9,6 @@ export const TextSectionHeading = ({ text, disableIntersection }) => {
     return (
         <h1
         ref={ref}
-        className={`${visible ? "visible" : "hidden"}`}>{text}</h1>
+        className={`text-section-heading ${visible ? "visible" : "hidden"}`}>{text}</h1>
     )
 }

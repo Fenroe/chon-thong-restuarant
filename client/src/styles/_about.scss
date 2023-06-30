@@ -1,9 +1,0 @@
-.about-image-1 {
-    min-height: 800px;
-
-    &::before {
-        background-image: url('/welcome.jpg');
-        @include background-image;
-        @include image-filter;
-    }
-}

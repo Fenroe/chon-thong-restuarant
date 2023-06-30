@@ -6,7 +6,7 @@ export const TextSectionImages = ({ imageData }) => {
     return (
         <div
         ref={ref}
-        className={`images-grid-wrapper ${visible ? "visible" : "hidden"}`}>
+        className={`text-section-images ${visible ? "visible" : "hidden"}`}>
             {imageData.map((image) =>
             <img
             key={`${image.id}${image.src}${image.alt}`}

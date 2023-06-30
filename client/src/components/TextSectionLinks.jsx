@@ -6,7 +6,7 @@ export const TextSectionLinks = ({ linkData }) => {
     return (
         <div
         ref={ref}
-        className={`links-wrapper ${visible ? "viisble" : "hidden"}`}>
+        className={`text-section-links ${visible ? "viisble" : "hidden"}`}>
             {linkData.map((link) =>
             <a
             key={`${link.id}${link.href}${link.text}`}

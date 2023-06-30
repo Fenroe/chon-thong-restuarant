@@ -39,3 +39,41 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
+@mixin fade-in-heading {
+    transition: all 0.3s;
+
+    &.hidden {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+
+    &.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@mixin fade-in-text {
+    transition: all 1s;
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    &.visible {
+        opacity: 1;
+    }
+}
+
+@mixin fade-in-image {
+    transition: all 0.5s;
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    &.visible {
+        opacity: 1;
+    }
+}

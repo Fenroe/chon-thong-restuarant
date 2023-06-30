@@ -8,6 +8,6 @@ export const TextSectionBranding = () => {
         ref={ref}
         src="/logo.jpg"
         alt="Chon Thong Thai Ravintola Kouvola"
-        className={`text-group-icon ${visible ? "visible" : "hidden"}`}/>
+        className={`text-section-branding ${visible ? "visible" : "hidden"}`}/>
     )
 }

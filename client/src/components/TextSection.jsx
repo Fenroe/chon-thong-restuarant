@@ -14,10 +14,10 @@ export const TextSection = ({ children, id }) => {
 
     return (
         <section
-        className={`text-wrapper ${visible ? "visible" : "hidden"}`}
+        className={`text-section ${visible ? "visible" : "hidden"}`}
         id={id || ""}
         ref={ref}>
-            <div className="text-inner-wrapper">
+            <div className="text-section-inner-wrapper">
                 {children}
             </div>
         </section>
