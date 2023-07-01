@@ -18,7 +18,6 @@ export const Menu = () => {
             headingText="Starters"
             extraClassName="menu-image-2"/>
             <TextSection>
-                <TextSectionHeading text="Starters" disableIntersection />
                 <MenuItems menuData={menuData.starters}/>
             </TextSection>
             <FixedImageSection

@@ -22,13 +22,25 @@ export const FixedImageSection = ({ extraClassName, isLink, headingText, linkUrl
             onMouseEnter={() => setMouseNearIcons(true)}
             onMouseLeave={() => setMouseNearIcons(false)}
             className={`social-media-icons ${mouseNearIcons ? "mouse-entered" : ""}`}>
-                <a href="mailto:thairavintolachonthong@gmail.com" className="social-media-icon">
+                <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:thairavintolachonthong@gmail.com"
+                className="social-media-icon">
                     <AiOutlineMail />
                 </a>
-                <a href="https://www.instagram.com/thairavintolachonthong/" className="social-media-icon">
+                <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/thairavintolachonthong/"
+                className="social-media-icon">
                     <AiOutlineInstagram />
                 </a>
-                <a href="https://www.facebook.com/ThaiRavintolaKouvola/" className="social-media-icon">
+                <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/ThaiRavintolaKouvola/"
+                className="social-media-icon">
                     <GrFacebookOption />
                 </a>
             </div>}

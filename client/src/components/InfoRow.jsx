@@ -49,10 +49,18 @@ export const InfoRow = ({ mode }) => {
                     <h2>Contact</h2>
                     <div
                     className={`social-media-icons`}>
-                        <a href="mailto:thairavintolachonthong@gmail.com" className="icon">
+                        <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="mailto:thairavintolachonthong@gmail.com"
+                        className="icon">
                             <AiOutlineMail />
                         </a>
-                        <a href="tel:+358413179819" className="icon">
+                        <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="tel:+358413179819"
+                        className="icon">
                             <AiOutlinePhone />
                         </a>
                     </div>

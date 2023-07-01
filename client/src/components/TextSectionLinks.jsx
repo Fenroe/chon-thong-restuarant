@@ -9,6 +9,8 @@ export const TextSectionLinks = ({ linkData }) => {
         className={`text-section-links ${visible ? "viisble" : "hidden"}`}>
             {linkData.map((link) =>
             <a
+            target="_blank"
+            rel="noopener noreferrer"
             key={`${link.id}${link.href}${link.text}`}
             href={link.href}>
                 {link.text}

@@ -7,7 +7,6 @@ export const useHeaderScroll = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log('hello')
             const scrollPosition = window.scrollY
             setScrollingDown(scrollTop < scrollPosition)
             setScrollTop(scrollPosition)

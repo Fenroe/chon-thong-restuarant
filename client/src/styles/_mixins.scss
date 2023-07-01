@@ -31,6 +31,7 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 2rem;
+    justify-content: center;
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -45,12 +46,12 @@
 
     &.hidden {
         opacity: 0;
-        transform: translateY(10vh);
+        //transform: translateY(10vh);
     }
 
     &.visible {
         opacity: 1;
-        transform: translateX(0);
+        //transform: translateX(0);
     }
 }
 

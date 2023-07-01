@@ -1,7 +1,6 @@
 import { GiChiliPepper } from "react-icons/gi"
 
 export const MenuItems = ({ menuData }) => {
-    console.log(menuData)
     return (
         <div className="menu-items-wrapper">
             {menuData.map((menuItem) =>
