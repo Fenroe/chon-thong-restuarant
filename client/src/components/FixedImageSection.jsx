@@ -3,14 +3,14 @@ import { AiOutlineMail, AiOutlineInstagram } from "react-icons/ai"
 import { GrFacebookOption } from "react-icons/gr"
 import { Link } from "react-router-dom"
 
-export const FixedImageSection = ({ extraClassName, isLink, headingText, linkUrl, showIcons }) => {
+export const FixedImageSection = ({ extraClassName, isLink, headingText, linkUrl, showIcons, id }) => {
     const [mouseNearIcons, setMouseNearIcons] = useState(false)
     
     return (
-        <section className={`image-wrapper ${extraClassName}`}>
+        <section className={`image-wrapper ${extraClassName}`} id={id}>
             {isLink ?
             <div className="image-wrapper-heading heading-link">
-                <Link to={linkUrl}>{headingText}</Link>
+                <Link onClick={() => sessionStorage.clear()} to={linkUrl}>{headingText}</Link>
             </div>
             :
             <div className="image-wrapper-heading">
@@ -25,10 +25,10 @@ export const FixedImageSection = ({ extraClassName, isLink, headingText, linkUrl
                 <a href="mailto:thairavintolachonthong@gmail.com" className="social-media-icon">
                     <AiOutlineMail />
                 </a>
-                <a href="" className="social-media-icon">
+                <a href="https://www.instagram.com/thairavintolachonthong/" className="social-media-icon">
                     <AiOutlineInstagram />
                 </a>
-                <a href="" className="social-media-icon">
+                <a href="https://www.facebook.com/ThaiRavintolaKouvola/" className="social-media-icon">
                     <GrFacebookOption />
                 </a>
             </div>}

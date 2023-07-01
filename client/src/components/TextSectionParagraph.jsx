@@ -4,7 +4,11 @@ import { useIntersectionObserver } from '../hooks'
 export const TextSectionParagraph = ({ text, disableIntersection }) => {
     const { ref, visible } = useIntersectionObserver()
 
-    if (disableIntersection) return <p>{text}</p>
+    if (disableIntersection) {
+        return (
+        <p className="text-section-p">{text}</p>
+        )
+    }
 
     return (
         <p

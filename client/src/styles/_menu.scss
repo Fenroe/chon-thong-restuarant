@@ -1,0 +1,67 @@
+.menu-image-1 {
+    min-height: 100vh;
+
+    &::before {
+        background-image: url('/decor-2.jpg');
+        @include fixed-background-image;
+        @include image-filter;
+    }
+}
+
+.menu-image-2 {
+    min-height: 800px;
+
+    &::before {
+        background-image: url('/food4.jpg');
+        @include background-image;
+        @include image-filter;
+    }
+}
+
+.menu-image-3 {
+    min-height: 800px;
+
+    &::before {
+        background-image: url('/food10.jpg');
+        @include background-image;
+        @include image-filter;
+    }
+}
+
+.menu-image-4 {
+    min-height: 800px;
+
+    &::before {
+        background-image: url('/food12.jpg');
+        @include background-image;
+        @include image-filter;
+    }
+}
+
+.menu-items-wrapper {
+    @include responsive-grid;
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 0.5rem;
+
+        h2 {
+            font-size: 1.75rem;
+            text-align: center;
+            color: #666666;
+        }
+
+        span {
+            font-size: 1.5rem;
+            color: #666666;
+        }
+
+        .menu-item-spice {
+            color: red;
+            font-size: 1.25rem;
+        }
+    }
+}

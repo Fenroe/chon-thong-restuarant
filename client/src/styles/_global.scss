@@ -1,8 +1,9 @@
-body, html, main {
-    height: 100%;
-    margin: 0;
-    font-weight: 400;
+body, html {
     overflow-x: hidden;
+}
+
+#root {
+    position: relative;
 }
 
 .image-wrapper {
