@@ -22,9 +22,7 @@ export const useHashScroll = () => {
     useEffect(() => {
         if (hashElement) {
         hashElement.scrollIntoView({
-            behavior: "smooth",
-            // block: "end",
-            inline: "nearest",
+            block: "start"
         })
         }
     }, [hashElement])

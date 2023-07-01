@@ -1,10 +1,31 @@
 header {
     height: 7vh;
-    background-color: #000000;
+    background-color: #000000c1;
     width: 100%;
     top: 0;
     position: fixed;
     z-index: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    @media (min-width: 600px) {
+        display: block;
+    }
+
+    button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: $silver;
+        font-size: 1.75rem;
+        margin-right: 1rem;
+
+
+        @media (min-width: 600px) {
+            display: none;
+        }
+    }
 }
 
 nav {
@@ -32,5 +53,41 @@ nav {
         &:hover {
             color: $pale-gold;
         }
+    }
+}
+
+.modal-backdrop {
+    @include align-center;
+    position: fixed;
+    inset: 0;
+    background-color: #000000e1;
+    z-index: 50;
+    overflow: hidden;
+
+    @media (min-width: 600px) {
+        display: none;
+    }
+
+    button {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2rem;
+        color: $silver;
+        background-color: transparent;
+        border: none;
+        @include align-center;
+        cursor: pointer;
+
+        &:hover {
+            color: $pale-gold;
+        }
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
     }
 }
