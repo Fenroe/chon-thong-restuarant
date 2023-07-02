@@ -35,20 +35,26 @@
             transition-duration: 0.5s;
 
             h2 {
-                font-size: 1.75rem;
+                font-size: 1.7rem;
                 margin-bottom: 2rem;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 color: $purple-accent;
+                text-align: center;
             }
 
             h3 {
                 font-size: 1.5rem;
+                text-align: center;
+                white-space: nowrap;
             }
 
             span {
                 font-size: 1.3rem;
                 line-height: 1.5;
+                margin-bottom: 0.5rem;
+                text-align: center;
+                white-space: nowrap;
             }
 
             .social-media-icons {

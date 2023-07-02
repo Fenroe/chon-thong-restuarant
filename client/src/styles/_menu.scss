@@ -40,24 +40,33 @@
 
 .menu-items-wrapper {
     @include responsive-grid;
+    margin-bottom: 5rem;
+    width: 100%;
 
     .menu-item {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        gap: 0.5rem;
-        margin: 1rem;
+        justify-content: space-between;
+        gap: 1rem;
 
         h2 {
-            font-size: 1.75rem;
-            text-align: center;
+            font-size: 1.25rem;
             color: #666666;
         }
 
         span {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             color: #666666;
+        }
+
+        .menu-item-price-and-spice {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .divide {
+                font-size: 1rem;
+            }
         }
 
         .menu-item-spice {

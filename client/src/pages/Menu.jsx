@@ -15,15 +15,11 @@ export const Menu = () => {
                 <TextSectionParagraph text="We offer a hearty lunch buffet on weekdays between the hours of 11.00 - 15.00 for the low price of 12,20 € per person. Drop by for a lunch to remember!" disableIntersection />
             </TextSection>
             <FixedImageSection
-            headingText="Starters"
+            headingText="AL a Carte"
             extraClassName="menu-image-2"/>
             <TextSection>
+                <TextSectionHeading text="Starters" disableIntersection />
                 <MenuItems menuData={menuData.starters}/>
-            </TextSection>
-            <FixedImageSection
-            headingText="Mains"
-            extraClassName="menu-image-3"/>
-            <TextSection>
                 <TextSectionHeading text="Tofu" disableIntersection />
                 <MenuItems menuData={menuData.tofu} />
                 <TextSectionHeading text="Chicken" disableIntersection />
@@ -40,11 +36,6 @@ export const Menu = () => {
                 <MenuItems menuData={menuData.friedRiceAndNoodles} />
                 <TextSectionHeading text="Cold Dishes" disableIntersection />
                 <MenuItems menuData={menuData.coldDishes} />
-            </TextSection>
-            <FixedImageSection
-            headingText="Dessert"
-            extraClassName="menu-image-4"/>
-            <TextSection>
                 <TextSectionHeading text="Dessert" disableIntersection />
                 <MenuItems menuData={menuData.dessert} />
             </TextSection>

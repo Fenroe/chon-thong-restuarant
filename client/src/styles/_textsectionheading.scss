@@ -1,5 +1,5 @@
 .text-section-heading {
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: $purple-accent;
     text-align: center;
     text-transform: uppercase;
@@ -8,5 +8,6 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 8px;
     line-height: 1.2;
+    margin-bottom: 2rem;
     @include fade-in-heading;
 }
