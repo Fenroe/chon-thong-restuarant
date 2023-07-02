@@ -4,56 +4,56 @@ import {
     TextSectionImages, ReviewWrapper, InfoWrapper, StoreLocationIframe
 } from '../components'
 
+const orderLinksData = [
+    {
+        id: 0,
+        href: "tel:+358413179819",
+        text: "Call Us Directly"
+    },
+    {
+        id: 1,
+        href: "https://wolt.com/en/fin/kouvola/restaurant/thai-ravintola-chon-thong",
+        text: "Order Through Wolt"
+    },
+]
+
+const aboutImagesData = [
+    {
+        id: 0,
+        src: "https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/tables.jpg",
+        alt: "Restuarant Interior",
+    },
+    {
+        id: 1,
+        src: "https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/corner-decor.jpg",
+        alt: "Restuarant Interior",
+    },
+    {
+        id: 2,
+        src: "https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/tables-2.jpg",
+        alt: "Restuarant Interior",
+    },
+]
+
+const reviewsImagesData = [
+    {
+        id: 0,
+        src: "https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food1.jpg",
+        alt: "Starter",
+    },
+    {
+        id: 1,
+        src: "https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food3.jpg",
+        alt: "Main",
+    },
+    {
+        id: 2,
+        src: "https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food11.jpg",
+        alt: "Dessert",
+    }
+]
+
 export const Home = () => {
-    const orderLinksData = [
-        {
-            id: 0,
-            href: "tel:+358413179819",
-            text: "Call Us Directly"
-        },
-        {
-            id: 1,
-            href: "https://wolt.com/en/fin/kouvola/restaurant/thai-ravintola-chon-thong",
-            text: "Order Through Wolt"
-        },
-    ]
-
-    const aboutImagesData = [
-        {
-            id: 0,
-            src: "/tables.jpg",
-            alt: "Restuarant Interior",
-        },
-        {
-            id: 1,
-            src: "/corner-decor.jpg",
-            alt: "Restuarant Interior",
-        },
-        {
-            id: 2,
-            src: "/tables-2.jpg",
-            alt: "Restuarant Interior",
-        },
-    ]
-
-    const reviewsImagesData = [
-        {
-            id: 0,
-            src: "/food1.jpg",
-            alt: "Starter",
-        },
-        {
-            id: 1,
-            src: "/food3.jpg",
-            alt: "Main",
-        },
-        {
-            id: 2,
-            src: "/food11.jpg",
-            alt: "Dessert",
-        }
-    ]
-
     return (
         <main>
             <FixedImageSection

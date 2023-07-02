@@ -2,7 +2,7 @@
     min-height: 100vh;
 
     &::before {
-        background-image: url('/decor-2.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor-2.jpg');
         @include fixed-background-image;
         @include image-filter;
     }
@@ -12,7 +12,7 @@
     min-height: 800px;
 
     &::before {
-        background-image: url('/food4.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food4.jpg');
         @include background-image;
         @include image-filter;
     }
@@ -22,7 +22,7 @@
     min-height: 800px;
 
     &::before {
-        background-image: url('/food10.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food10.jpg');
         @include background-image;
         @include image-filter;
     }
@@ -32,7 +32,7 @@
     min-height: 800px;
 
     &::before {
-        background-image: url('/food12.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food12.jpg');
         @include background-image;
         @include image-filter;
     }

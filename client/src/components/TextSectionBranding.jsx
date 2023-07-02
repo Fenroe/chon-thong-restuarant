@@ -6,7 +6,7 @@ export const TextSectionBranding = ({ disableIntersection }) => {
     if (disableIntersection) {
         return (
             <img
-            src="/logo.jpg"
+            src="https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/logo.jpg"
             alt="Chon Thong Thai Ravintola Kouvola"
             className="text-section-branding" />
         )
@@ -15,7 +15,7 @@ export const TextSectionBranding = ({ disableIntersection }) => {
     return (
         <img
         ref={ref}
-        src="/logo.jpg"
+        src="https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/logo.jpg"
         alt="Chon Thong Thai Ravintola Kouvola"
         className={`text-section-branding ${visible ? "visible" : "hidden"}`}/>
     )

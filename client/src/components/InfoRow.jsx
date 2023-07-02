@@ -8,7 +8,7 @@ export const InfoRow = ({ mode }) => {
         return (
             <div ref={ref} className={`info-row ${visible ? "visible" : "hidden"}`}>
                 <div className="info-row-image">
-                    <img src="/shelves.jpg" alt="" />
+                    <img src="https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/shelves.jpg" alt="" />
                 </div>
                 <div className="info-text">
                     <h2>Address</h2>
@@ -24,7 +24,7 @@ export const InfoRow = ({ mode }) => {
         return (
             <div ref={ref} className={`info-row ${visible ? "visible" : "hidden"}`}>
                 <div className="info-row-image">
-                    <img src="/front-of-store.jpg" alt="" />
+                    <img src="https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/front-of-store.jpg" alt="" />
                 </div>
                 <div className="info-text">
                     <h2>Hours</h2>
@@ -43,7 +43,7 @@ export const InfoRow = ({ mode }) => {
         return (
             <div ref={ref} className={`info-row ${visible ? "visible" : "hidden"}`}>
                 <div className="info-row-image">
-                    <img src="/drinks.jpg" alt="" />
+                    <img src="https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/drinks.jpg" alt="" />
                 </div>
                 <div className="info-text">
                     <h2>Contact</h2>

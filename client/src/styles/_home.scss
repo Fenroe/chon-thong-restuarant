@@ -6,7 +6,7 @@
     min-height: 100vh;
 
     &::before {
-        background-image: url('/exterior.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/exterior.jpg');
         @include fixed-background-image;
         @include image-filter;
     }
@@ -16,7 +16,7 @@
     min-height: 100vh;
 
     &::before {
-        background-image: url('/buffet.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/buffet.jpg');
         @include fixed-background-image;
         @include image-filter;
     }
@@ -26,7 +26,7 @@
     min-height: 800px;
 
     &::before {
-        background-image: url('/decor.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor.jpg');
         @include background-image;
         @include image-filter;
     }
@@ -36,7 +36,7 @@
     min-height: 800px;
 
     &::before {
-        background-image: url('/welcome.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/welcome.jpg');
         @include background-image;
         @include image-filter;
     }
@@ -46,7 +46,7 @@
     min-height: 93vh;
 
     &::before {
-        background-image: url('/decor-2.jpg');
+        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor-2.jpg');
         @include fixed-background-image;
         @include image-filter;
     }
