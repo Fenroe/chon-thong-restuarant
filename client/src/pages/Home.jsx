@@ -87,8 +87,7 @@ export const Home = () => {
             </TextSection>
             <FixedImageSection
             extraClassName="home-image-3"
-            headingText="Plan Your Visit"
-            id="contact"/>
+            headingText="Plan Your Visit"/>
             <TextSection id="contact">
                 <InfoWrapper />
                 <StoreLocationIframe />

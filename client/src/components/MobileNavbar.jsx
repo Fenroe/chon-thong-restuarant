@@ -1,6 +1,6 @@
 import { AiOutlineClose } from "react-icons/ai"
 import { ModalPortal } from "./ModalPortal"
-import { Link } from "react-router-dom"
+import { HashLink as Link } from "react-router-hash-link"
 import { useRef } from "react"
 import { motion } from "framer-motion"
 

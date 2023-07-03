@@ -1,14 +1,11 @@
-import { useHashScroll } from "../hooks"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { HashLink as Link } from "react-router-hash-link"
 import { MobileNavbar } from "./MobileNavbar"
 import { BiMenuAltRight } from "react-icons/bi"
 import { AnimatePresence } from "framer-motion"
 
 export const Header = () => {
     const [showModal, setShowModal] = useState(false)
-
-    useHashScroll()
 
     return (
         <header>
