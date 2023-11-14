@@ -1,18 +1,16 @@
-import React from 'react'
-import { useIntersectionObserver } from '../hooks'
+import React from "react";
+import { useIntersectionObserver } from "../hooks";
 
 export const TextSectionParagraph = ({ text, disableIntersection }) => {
-    const { ref, visible } = useIntersectionObserver()
+  const { ref, visible } = useIntersectionObserver();
 
-    if (disableIntersection) {
-        return (
-        <p className="text-section-p">{text}</p>
-        )
-    }
+  if (disableIntersection) {
+    return <p className="text-section-p">{text}</p>;
+  }
 
-    return (
-        <p
-        ref={ref}
-        className={`text-section-p ${visible ? "visible" : "hidden"}`}>{text}</p>
-    )
-}
+  return (
+    <p ref={ref} className={`text-section-p ${visible ? "visible" : "hidden"}`}>
+      {text}
+    </p>
+  );
+};

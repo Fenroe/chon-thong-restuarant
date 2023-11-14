@@ -1,77 +1,77 @@
 .menu-image-1 {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor-2.jpg');
-        @include fixed-background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor-2.jpg");
+    @include fixed-background-image;
+    @include image-filter;
+  }
 }
 
 .menu-image-2 {
-    min-height: 800px;
+  min-height: 800px;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food4.jpg');
-        @include background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food4.jpg");
+    @include background-image;
+    @include image-filter;
+  }
 }
 
 .menu-image-3 {
-    min-height: 800px;
+  min-height: 800px;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food10.jpg');
-        @include background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food10.jpg");
+    @include background-image;
+    @include image-filter;
+  }
 }
 
 .menu-image-4 {
-    min-height: 800px;
+  min-height: 800px;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food12.jpg');
-        @include background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/food12.jpg");
+    @include background-image;
+    @include image-filter;
+  }
 }
 
 .menu-items-wrapper {
-    @include responsive-grid;
-    margin-bottom: 5rem;
-    width: 100%;
+  @include responsive-grid;
+  margin-bottom: 5rem;
+  width: 100%;
 
-    .menu-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1rem;
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 
-        h2 {
-            font-size: 1.25rem;
-            color: #666666;
-        }
-
-        span {
-            font-size: 1.1rem;
-            color: #666666;
-        }
-
-        .menu-item-price-and-spice {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-
-            .divide {
-                font-size: 1rem;
-            }
-        }
-
-        .menu-item-spice {
-            color: red;
-            font-size: 1.25rem;
-        }
+    h2 {
+      font-size: 1.25rem;
+      color: #666666;
     }
+
+    span {
+      font-size: 1.1rem;
+      color: #666666;
+    }
+
+    .menu-item-price-and-spice {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .divide {
+        font-size: 1rem;
+      }
+    }
+
+    .menu-item-spice {
+      color: red;
+      font-size: 1.25rem;
+    }
+  }
 }

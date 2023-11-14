@@ -1,7 +1,4 @@
-import { reviews } from "./reviews"
-import { menuData } from "./menuData"
+import { reviews } from "./reviews";
+import { menuData } from "./menuData";
 
-export {
-    reviews,
-    menuData
-}
+export { reviews, menuData };

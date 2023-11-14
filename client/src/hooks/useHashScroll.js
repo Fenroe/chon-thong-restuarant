@@ -1,1 +1,1 @@
-const useHashScroll = () => null
+const useHashScroll = () => null;

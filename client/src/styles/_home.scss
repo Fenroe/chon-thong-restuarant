@@ -3,62 +3,62 @@
 @import "info";
 
 .home-image-1 {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/exterior.jpg');
-        @include fixed-background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/exterior.jpg");
+    @include fixed-background-image;
+    @include image-filter;
+  }
 }
 
 .home-image-2 {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/buffet.jpg');
-        @include fixed-background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/buffet.jpg");
+    @include fixed-background-image;
+    @include image-filter;
+  }
 }
 
 .home-image-3 {
-    min-height: 800px;
+  min-height: 800px;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor.jpg');
-        @include background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor.jpg");
+    @include background-image;
+    @include image-filter;
+  }
 }
 
 .about-image-1 {
-    min-height: 800px;
+  min-height: 800px;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/welcome.jpg');
-        @include background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/welcome.jpg");
+    @include background-image;
+    @include image-filter;
+  }
 }
 
 .info-image-1 {
-    min-height: 93vh;
+  min-height: 93vh;
 
-    &::before {
-        background-image: url('https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor-2.jpg');
-        @include fixed-background-image;
-        @include image-filter;
-    }
+  &::before {
+    background-image: url("https://d2tgvtaoa6ihgv.cloudfront.net/chonthong/decor-2.jpg");
+    @include fixed-background-image;
+    @include image-filter;
+  }
 }
 
 .iframe-wrapper {
-    width: 100%;
-    @include fade-in-image;
+  width: 100%;
+  @include fade-in-image;
 
-    iframe {
-        width: 100%;
-        min-height: 300px;
-        border: none;
-    }
+  iframe {
+    width: 100%;
+    min-height: 300px;
+    border: none;
+  }
 }

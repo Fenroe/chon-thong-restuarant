@@ -1,85 +1,85 @@
-body, html {
-    overflow-x: hidden;
+body,
+html {
+  overflow-x: hidden;
 }
 
 .overflow-hidden {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 #root {
-    position: relative;
+  position: relative;
 }
 
 .image-wrapper {
-    @include align-center;
+  @include align-center;
+  padding: 2rem;
+  position: relative;
+
+  .image-wrapper-heading.heading-link {
+    border: 1px solid white;
+    padding: 1rem;
+    transition-property: all;
+    transition-duration: 0.3s;
+    background-color: #000000a1;
+    letter-spacing: 5px;
+
+    &:hover {
+      color: black;
+      background-color: white;
+      text-shadow: none;
+
+      > a {
+        color: black;
+      }
+    }
+  }
+
+  .image-wrapper-heading {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 8px black;
     padding: 2rem;
-    position: relative;
+    text-align: center;
+    letter-spacing: 5px;
 
-    .image-wrapper-heading.heading-link {
-        border: 1px solid white;
-        padding: 1rem;
-        transition-property: all;
-        transition-duration: 0.3s;
-        background-color: #000000a1;
-        letter-spacing: 5px;
-
-        &:hover {
-            color: black;
-            background-color: white;
-            text-shadow: none;
-
-            >a {
-                color: black;
-            }
-        }
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 2.5rem;
     }
+  }
 
-    .image-wrapper-heading {
-        font-size: 2rem;
-        color: white;
-        text-transform: uppercase;
-        text-shadow: 6px 6px 8px black;
-        padding: 2rem;
-        text-align: center;
-        letter-spacing: 5px;
+  .social-media-icons {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
 
-        a {
-            text-decoration: none;
-            color: white;
-            font-size: 2.5rem;
-        }
+    .social-media-icon {
+      font-size: 1.5rem;
+      color: black;
+      padding: 0.5rem;
+      border: 1px solid $silver;
+      border-radius: 50%;
+      text-decoration: none;
+      background-color: $silver;
+      transition-property: all;
+      transition-duration: 0.3s;
+      @include align-center;
     }
+  }
 
-    
-    .social-media-icons {
-        display: flex;
-        gap: 1rem;
-        position: absolute;
-        bottom: 1rem;
+  .social-media-icons.mouse-entered {
+    .social-media-icon {
+      border: 1px solid #666666;
+      background-color: #666666;
 
-        .social-media-icon {
-            font-size: 1.5rem;
-            color: black;
-            padding: .5rem;
-            border: 1px solid $silver;
-            border-radius: 50%;
-            text-decoration: none;
-            background-color: $silver;
-            transition-property: all;
-            transition-duration: 0.3s;
-            @include align-center;
-        }
+      &:hover {
+        border: 1px solid $silver;
+        background-color: $silver;
+      }
     }
-
-    .social-media-icons.mouse-entered {
-        .social-media-icon {
-            border: 1px solid #666666;
-            background-color: #666666;
-
-            &:hover {
-                border: 1px solid $silver;
-                background-color: $silver;
-            }
-        }
-    }
+  }
 }

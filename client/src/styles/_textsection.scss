@@ -5,16 +5,16 @@
 @import "textsectionimages";
 
 .text-section {
-    background-color: white;
-    width: 100%;
+  background-color: white;
+  width: 100%;
 }
 
 .text-section-inner-wrapper {
-    margin: 0 auto;
-    @include align-center;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 3rem;
-    max-width: 1024px;
-    background-color: inherit;
+  margin: 0 auto;
+  @include align-center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 1024px;
+  background-color: inherit;
 }

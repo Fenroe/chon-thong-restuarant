@@ -1,18 +1,19 @@
-import { useInView } from "react-intersection-observer"
-import { useState, useEffect } from "react"
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 
 export const useIntersectionObserver = () => {
-    const { ref, inView } = useInView({ threshold: 0 })
+  const { ref, inView } = useInView({ threshold: 0 });
 
-    const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
 
-    useEffect(() => {
-        if (inView && !visible) {
-            setVisible(true)
-        }
-    }, [inView])
-
-    return {
-        ref, visible
+  useEffect(() => {
+    if (inView && !visible) {
+      setVisible(true);
     }
-}
+  }, [inView]);
+
+  return {
+    ref,
+    visible,
+  };
+};

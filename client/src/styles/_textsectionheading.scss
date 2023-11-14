@@ -1,13 +1,13 @@
 .text-section-heading {
-    font-size: 2.2rem;
-    color: $purple-accent;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: "Alice", serif;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 8px;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-    @include fade-in-heading;
+  font-size: 2.2rem;
+  color: $purple-accent;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Alice", serif;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  @include fade-in-heading;
 }

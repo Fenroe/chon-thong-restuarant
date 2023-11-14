@@ -1,81 +1,79 @@
 @mixin align-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin image-filter {
-    filter: brightness(0.6) contrast(1.75) saturate(1.5);
+  filter: brightness(0.6) contrast(1.75) saturate(1.5);
 }
 
-
-
 @mixin background-image {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #000000;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 @mixin fixed-background-image {
-    @include background-image;
-    background-attachment: fixed;
+  @include background-image;
+  background-attachment: fixed;
 }
 
 @mixin responsive-grid {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 2rem;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
 
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    @media (min-width: 1024px) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @mixin fade-in-heading {
-    transition: all 0.3s;
+  transition: all 0.3s;
 
-    &.hidden {
-        opacity: 0;
-        //transform: translateY(10vh);
-    }
+  &.hidden {
+    opacity: 0;
+    //transform: translateY(10vh);
+  }
 
-    &.visible {
-        opacity: 1;
-        //transform: translateX(0);
-    }
+  &.visible {
+    opacity: 1;
+    //transform: translateX(0);
+  }
 }
 
 @mixin fade-in-text {
-    transition: all 1s;
+  transition: all 1s;
 
-    &.hidden {
-        opacity: 0;
-    }
+  &.hidden {
+    opacity: 0;
+  }
 
-    &.visible {
-        opacity: 1;
-    }
+  &.visible {
+    opacity: 1;
+  }
 }
 
 @mixin fade-in-image {
-    transition: all 0.5s;
+  transition: all 0.5s;
 
-    &.hidden {
-        opacity: 0;
-    }
+  &.hidden {
+    opacity: 0;
+  }
 
-    &.visible {
-        opacity: 1;
-    }
+  &.visible {
+    opacity: 1;
+  }
 }
