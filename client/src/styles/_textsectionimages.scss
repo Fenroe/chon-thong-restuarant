@@ -1,9 +1,13 @@
 .text-section-images {
-  @include responsive-grid;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 
   img {
-    width: 100%;
+    width: 12rem;
     object-fit: cover;
+    border-radius: 1rem;
     aspect-ratio: 1/1;
     @include fade-in-image;
 

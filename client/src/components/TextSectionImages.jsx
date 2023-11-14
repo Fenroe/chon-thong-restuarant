@@ -1,13 +1,6 @@
-import { useIntersectionObserver } from "../hooks";
-
 export const TextSectionImages = ({ imageData }) => {
-  const { ref, visible } = useIntersectionObserver();
-
   return (
-    <div
-      ref={ref}
-      className={`text-section-images ${visible ? "visible" : "hidden"}`}
-    >
+    <div className={`text-section-images`}>
       {imageData.map((image) => (
         <img
           key={`${image.id}${image.src}${image.alt}`}
